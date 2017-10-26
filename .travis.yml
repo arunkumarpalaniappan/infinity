@@ -4,6 +4,7 @@ node_js:
 before_install:
   - npm i -g npm
 script:
+  - yarn install
   - npm run start
 branches:
   only:

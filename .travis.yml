@@ -3,9 +3,11 @@ node_js:
   - "node"
 before_install:
   - npm i -g npm
+dependencies:
+  override:
+    - yarn install
 script:
-  - yarn install
-  - npm run start
+  - yarn run start
 branches:
   only:
     - master
